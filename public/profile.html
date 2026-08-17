@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile - EV ChargeHub</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        ⚡ EV ChargeHub
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="/">
+            Home
+        </a>
+
+        <a href="/#stations">
+            Stations
+        </a>
+
+        <a href="/#booking">
+            Book
+        </a>
+
+        <a href="/profile">
+            👤 Profile
+        </a>
+
+        <button
+            id="profileLogout"
+            class="logout-btn"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</nav>
+
+
+<!-- PROFILE -->
+
+<main class="profile-page">
+
+
+    <!-- PROFILE HEADER -->
+
+    <section class="profile-header">
+
+        <div class="profile-avatar">
+            👤
+        </div>
+
+        <div>
+
+            <p class="small-title">
+                MY ACCOUNT
+            </p>
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Manage your account and
+                EV charging details.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- PERSONAL INFORMATION -->
+
+    <section class="profile-card">
+
+        <h2>
+            Personal Information
+        </h2>
+
+
+        <form id="profileForm">
+
+            <label>
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="profileName"
+                required
+            >
+
+
+            <label>
+                Email
+            </label>
+
+            <input
+                type="email"
+                id="profileEmail"
+                disabled
+            >
+
+
+            <label>
+                Vehicle Model
+            </label>
+
+            <input
+                type="text"
+                id="profileVehicle"
+                placeholder="Example: Tata Nexon EV"
+            >
+
+
+            <button
+                type="submit"
+                class="primary-btn"
+            >
+                Save Changes
+            </button>
+
+        </form>
+
+
+        <div id="profileMessage"></div>
+
+    </section>
+
+
+    <!-- BOOKINGS -->
+
+    <section class="profile-card">
+
+        <div class="profile-card-title">
+
+            <div>
+
+                <p class="small-title">
+                    RESERVATIONS
+                </p>
+
+                <h2>
+                    My Bookings
+                </h2>
+
+            </div>
+
+
+            <a
+                href="/#booking"
+                class="profile-small-btn"
+            >
+                + Book Charging
+            </a>
+
+        </div>
+
+
+        <div
+            id="profileBookings"
+            class="booking-list"
+        ></div>
+
+    </section>
+
+
+    <!-- FEEDBACK -->
+
+    <section class="profile-card">
+
+        <p class="small-title">
+            YOUR EXPERIENCE
+        </p>
+
+        <h2>
+            ⭐ Give Feedback
+        </h2>
+
+        <p class="muted">
+            Tell us about your charging experience.
+        </p>
+
+
+        <form id="profileFeedbackForm">
+
+            <label>
+                Rating
+            </label>
+
+            <select
+                id="profileRating"
+                required
+            >
+
+                <option value="">
+                    Select rating
+                </option>
+
+                <option value="5">
+                    ⭐⭐⭐⭐⭐ Excellent
+                </option>
+
+                <option value="4">
+                    ⭐⭐⭐⭐ Very Good
+                </option>
+
+                <option value="3">
+                    ⭐⭐⭐ Good
+                </option>
+
+                <option value="2">
+                    ⭐⭐ Average
+                </option>
+
+                <option value="1">
+                    ⭐ Poor
+                </option>
+
+            </select>
+
+
+            <label>
+                Feedback
+            </label>
+
+            <textarea
+                id="profileComment"
+                placeholder="Write your feedback..."
+                required
+            ></textarea>
+
+
+            <button
+                type="submit"
+                class="primary-btn"
+            >
+                Submit Feedback
+            </button>
+
+        </form>
+
+
+        <div
+            id="profileFeedbackMessage"
+        ></div>
+
+    </section>
+
+
+    <!-- FEEDBACK LIST -->
+
+    <section class="profile-card">
+
+        <p class="small-title">
+            COMMUNITY
+        </p>
+
+        <h2>
+            What Users Say
+        </h2>
+
+
+        <div
+            id="profileFeedbackList"
+            class="feedback-list"
+        ></div>
+
+    </section>
+
+
+</main>
+
+
+<footer>
+
+    <h3>
+        ⚡ EV ChargeHub
+    </h3>
+
+    <p>
+        Smart EV Charging Station Finder
+        & Booking System
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
