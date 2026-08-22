@@ -1,13 +1,1 @@
-[
-  {
-    "id": 1787025697928,
-    "userId": 1786983994522,
-    "stationId": 2,
-    "stationName": "PowerVolt Charging Hub",
-    "vehicleModel": "Tata",
-    "date": "2026-08-18",
-    "startTime": "10:00",
-    "endTime": "12:00",
-    "status": "Confirmed"
-  }
-]
+[]
